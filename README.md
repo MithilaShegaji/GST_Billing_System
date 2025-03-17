@@ -1,66 +1,105 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# GST Billing Dashboard
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A web-based GST Billing Dashboard designed to manage business and consumer invoices with ease. This project includes features for handling parties, creating invoices, and analyzing business performance.
 
-## About Laravel
+## Table of Contents
+- [About the Project](#about-the-project)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Screenshots](#screenshots)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## About the Project
+This GST Billing Dashboard streamlines the process of creating, managing, and tracking invoices for both businesses (B2B) and consumers (B2C). It provides detailed insights into sales, profits, and tax calculations.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Features
+- Add and manage parties (businesses/consumers).
+- Create and manage business invoices (B2B).
+- Create and manage consumer invoices (B2C).
+- Dashboard overview with total business done, B2B/B2C profit analysis, and tracking.
+- GST calculation for invoices.
+- Responsive UI with Bootstrap.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Technologies Used
+- HTML, CSS, Bootstrap
+- JavaScript
+- PHP (Blade Templates for Laravel)
+- MySQL (for data storage)
 
-## Learning Laravel
+## Installation
+1. Clone the repository:
+```bash
+git clone https://github.com/your-username/gst-billing-dashboard.git
+```
+2. Navigate to the project directory:
+```bash
+cd gst-billing-dashboard
+```
+3. Install dependencies:
+```bash
+composer install
+npm install
+```
+4. Set up environment variables:
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+5. Migrate the database:
+```bash
+php artisan migrate
+```
+6. Run the development server:
+```bash
+php artisan serve
+```
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Usage
+1. Access the app at `http://localhost:8000`.
+2. Navigate through the dashboard to manage parties, create invoices, and view analytics.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Screenshots
+- **Home:**
+![image](https://github.com/user-attachments/assets/a54e77c1-8c4a-469f-bb7d-29d5da05fd80)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+![image](https://github.com/user-attachments/assets/2c5b541d-0889-413b-a5ad-42f68151b9b2)
 
-## Laravel Sponsors
+- **Dashboard:**
+![image](https://github.com/user-attachments/assets/b59034ea-b47f-470a-b9a7-e7487fd91b8c)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- **Add Party:**
+![image](https://github.com/user-attachments/assets/e33e9787-6c24-4576-b258-271c2c99eb0b)
 
-### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+- **Manage Party:**
+![image](https://github.com/user-attachments/assets/838c04b7-5869-4edd-9319-82fc7bd9065f)
+
+
+- **Create Business Invoice:**![image](https://github.com/user-attachments/assets/98f0d4f8-a76b-4517-8b8e-cef45a171893)
+
+- **Manage Business Invoice:**![image](https://github.com/user-attachments/assets/745beae8-4f30-4b00-a6a4-672bb05ec3e8)
+
+- **Create Consumer Invoice:**![image](https://github.com/user-attachments/assets/c9f262b1-4837-47e6-a69a-c5f1069e85c7)
+
+- **Manage Consumer Invoice:**![image](https://github.com/user-attachments/assets/00aaece8-4877-4fcd-9b97-8effa3b926d8)
+
+- **Print Bills:** ![image](https://github.com/user-attachments/assets/ddcc8285-c30a-423f-8cd5-bb75d3b4710d)
 
 ## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Contributions are welcome! Please follow these steps:
+1. Fork the project.
+2. Create a feature branch (`git checkout -b feature/YourFeature`).
+3. Commit changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Open a pull request.
 
 ## License
+This project is licensed under the MIT License.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Contact
+Your Name - Mithila
+
